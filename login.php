@@ -37,6 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Invalid login, redirect back to the login page
         header("Location: index.html");
-    };
+    }
 }
 ?>
