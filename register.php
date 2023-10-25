@@ -1,6 +1,6 @@
 <?php
-require 'database.php'; 
-$collection = (new MongoDB\Client)->Agrogetaway->users;
+require 'database.php';
+$collection = (new Mysql\Client)->Agrogetaway->users;
 
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
