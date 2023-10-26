@@ -1,0 +1,91 @@
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+}
+
+.nav-text {
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+}
+
+.nav-item-link {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.grid {
+    display: grid;
+    padding: 10px 30px;
+    margin: 0px auto;
+    justify-items: center;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.home-images {
+    height: 250px;
+}
+
+.check {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.icons-3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.img-icons {
+    height: 100px;
+    width: 100px;
+}
+
+.login-input{
+    border: 2px solid black;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.login-btn {
+    border: 2px solid black;
+    padding: 5px 10px;
+    background-color: #074301;
+    color: white;
+    margin: 0px auto;
+    width: 100%
+}
+
+.signup-form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid rgb(193, 190, 190);
+    border-radius: 15px;
+}
+
+.login {
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
