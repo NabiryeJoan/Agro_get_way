@@ -32,66 +32,53 @@ if (isset($_POST['submit'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/style-starter.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-</head>
-
-<body>
-    <?php include_once('includes/header.php'); ?>
-    <form action="" method="POST" class="signup-form">
-        <h2 class="login">Sign Up</h2>
-        <label for="name">Name:</label><br>
-        <input class="login-input" type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input class="login-input" type="email" id="email" name="email" required><br><br>
-
-        <label for="contact">Contact:</label><br>
-        <input class="login-input" type="text" id="contact" name="contact" required><br><br>
-
-        <label for="password">Password:</label><br>
-        <input class="login-input" type="password" id="password" name="password" required><br><br>
-
-        <input class="login-btn" type="submit" name="submit" value="Register">
-    </form>
-
-</body>
-
-</html>
-=======
-<!DOCTYPE html>
-<html>
-<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/material@5.3.2/dist/css/mui.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/icons-material@5.3.2/dist/mui-icons.min.css">
     <title>Sign Up</title>
 </head>
 <body>
-    <h1>Sign Up</h1>
-    <form action="register.php" method="post">
-        
-
-
-
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br>
-
-        <label for="contact">Contact:</label>
-        <input type="contact" id="contact" name="contact" required><br>
-
-        <input type="submit" value="Sign Up">
-    </form>
-    <p>Already have an account? <a href="login.html">Login here</a></p>
+    <div class="container">
+        <div class="main">
+            <div class="avatar">
+                <svg class="MuiSvgIcon-root MuiAvatar-icon MuiAvatar-colorSecondary" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+                    <path d="M9.5 12c-.28 0-.5.22-.5.5s.22.5.5.5h1c.28 0 .5-.22.5-.5s-.22-.5-.5-.5h-1zm5 0c-.28 0-.5.22-.5.5s.22.5.5.5h1c.28 0 .5-.22.5-.5s-.22-.5-.5-.5h-1z"></path>
+                    <circle cx="12" cy="8.5" r="1.5"></circle>
+                    <circle cx="12" cy="15.5" r="1.5"></circle>
+                </svg>
+            </div>
+            <h1>Sign up</h1>
+            <form id="signup-form" novalidate>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="grid-item">
+                        <input type="checkbox" id="allowExtraEmails" name="allowExtraEmails">
+                        <label for="allowExtraEmails">I want to receive inspiration, marketing promotions, and updates via email.</label>
+                    </div>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </form>
+        </div>
+        <p class="copyright">Copyright &copy; Your Website <?php echo date("Y"); ?>.</p>
+    </div>
 </body>
 </html>
->>>>>>> 03b6023f96730447cfadc5e745a7a4443dae38f5
